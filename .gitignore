@@ -1,0 +1,10 @@
+# Source files used only to regenerate the published catalog
+/data/anuario2022/
+/data/anuario2022.zip
+/data/estatal.csv
+/data/estatal.utf8.csv
+/data/privada.csv
+/data/privada.utf8.csv
+/data/bytes.txt
+/data/headers.txt
+/data/nombres-anuario.txt

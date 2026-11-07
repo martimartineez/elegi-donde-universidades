@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f2">
+    <meta
+      name="description"
+      content="Explorá universidades e institutos universitarios de Argentina por nombre, sigla, área de estudio y provincia."
+    >
+    <title>Elegí dónde — Universidades de Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Elegí dónde, inicio">
+        <span class="brand-mark" aria-hidden="true">e.</span>
+        <span>elegí<span class="brand-light">dónde</span></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="explorar">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Tu futuro, a tu manera</div>
+          <h1>Hay un lugar<br>para <span>lo que te mueve.</span></h1>
+          <p class="hero-description">
+            Explorá la oferta universitaria argentina y encontrá dónde seguir eso que te apasiona.
+          </p>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-panel-heading">
+            <div>
+              <span class="panel-kicker">EMPEZÁ A EXPLORAR</span>
+              <h2>¿Qué estás buscando?</h2>
+            </div>
+            <span class="search-sparkle" aria-hidden="true">✳</span>
+          </div>
+          <label class="search-input-wrap" for="search-input">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.8"></circle>
+              <path d="m16 16 4.2 4.2"></path>
+            </svg>
+            <input id="search-input" type="search" placeholder="Buscá universidad, sigla o área..." autocomplete="off">
+            <kbd>Ctrl K</kbd>
+          </label>
+          <button type="button" class="area-picker-toggle" id="show-areas">
+            Elegir un área de estudio <span aria-hidden="true">↓</span>
+          </button>
+        </div>
+        <div class="hero-decoration decoration-one" aria-hidden="true"></div>
+        <div class="hero-decoration decoration-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="area-section" id="area-picker" aria-labelledby="areas-heading" hidden>
+        <div class="section-topline">
+          <div>
+            <span class="section-kicker">UN PRIMER PASO</span>
+            <h2 id="areas-heading">¿Qué te gustaría estudiar?</h2>
+            <p class="area-intro">Elegí una categoría o afiná la búsqueda con una disciplina específica. La fuente clasifica por áreas; no incluye el listado de carreras individuales.</p>
+          </div>
+          <button type="button" class="text-button" id="close-areas">Volver <span aria-hidden="true">↑</span></button>
+        </div>
+        <div class="area-grid" id="area-grid" aria-label="Filtrar por área de estudio"></div>
+      </section>
+
+      <section class="results-section" id="resultados" aria-labelledby="results-heading" hidden>
+        <div class="results-heading-row">
+          <div>
+            <span class="section-kicker">ENCONTRÁ TU PRÓXIMO PASO</span>
+            <h2 id="results-heading">Universidades para vos</h2>
+            <p class="results-summary" id="results-summary" aria-live="polite"></p>
+          </div>
+          <div class="results-actions">
+            <button type="button" class="text-button change-area-button" id="change-area">Cambiar área <span aria-hidden="true">↗</span></button>
+            <label class="sort-control">
+              <span>Ordenar por</span>
+              <select id="sort-select" aria-label="Ordenar resultados">
+                <option value="name">Nombre A–Z</option>
+                <option value="students">Matrícula 2022</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="results-layout">
+          <aside class="filters" aria-label="Filtros de búsqueda">
+            <div class="filter-heading">
+              <h3>Filtros</h3>
+              <button type="button" id="clear-filters">Limpiar</button>
+            </div>
+            <label class="filter-label" for="province-select">Provincia</label>
+            <select id="province-select">
+              <option value="">Todas las provincias</option>
+            </select>
+            <div class="filter-divider"></div>
+            <span class="filter-label">Gestión</span>
+            <label class="check-option">
+              <input type="checkbox" name="sector" value="Pública">
+              <span class="custom-check" aria-hidden="true"></span>
+              <span>Pública</span>
+            </label>
+            <label class="check-option">
+              <input type="checkbox" name="sector" value="Privada">
+              <span class="custom-check" aria-hidden="true"></span>
+              <span>Privada</span>
+            </label>
+            <div class="filter-note">
+              <span aria-hidden="true">✳</span>
+              Podés combinar filtros para encontrar opciones que se ajusten a vos.
+            </div>
+          </aside>
+
+          <div class="results-content">
+            <div class="active-filters" id="active-filters"></div>
+            <div class="university-grid" id="university-grid"></div>
+            <div class="empty-state" id="empty-state" hidden>
+              <span class="empty-icon" aria-hidden="true">⌕</span>
+              <h3>No encontramos coincidencias</h3>
+              <p>Probá con otro nombre, sigla o área, o quitá alguno de los filtros.</p>
+              <button type="button" class="button-primary" id="empty-clear">Limpiar búsqueda</button>
+            </div>
+            <div class="results-footer">
+              <span id="visible-count"></span>
+              <span class="source-hint">Información institucional y matrícula relevada en 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="data-note" id="acerca">
+          <div class="data-note-icon" aria-hidden="true">i</div>
+          <div>
+            <h2>Sobre la información</h2>
+            <p>
+              Las áreas se infieren de la matrícula por rama del Anuario Estadístico Universitario 2022;
+              no representan una lista de carreras vigentes. Confirmá la oferta en los sitios oficiales enlazados.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">e.</span><span>elegí<span class="brand-light">dónde</span></span></a>
+      <span>Una guía para dar el próximo paso.</span>
+      <span>Argentina <span aria-hidden="true">·</span> 2022</span>
+    </footer>
+
+    <dialog class="university-dialog" id="university-dialog" aria-labelledby="dialog-title">
+      <div id="university-detail"></div>
+    </dialog>
+
+    <script src="data/universidades.js"></script>
+    <script src="data/universidades-meta.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
