@@ -16,4 +16,4 @@ Para regenerar el catálogo localmente, primero necesitás colocar los archivos 
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-data.ps1
 ```
 
-El catálogo combina los listados de instituciones con las tablas del Anuario Estadístico Universitario 2022. Las categorías y etiquetas de estudio se basan en disciplinas con matrícula registrada: las fuentes no incluyen un listado de carreras individuales ni confirman la oferta vigente. Las fichas incluyen un resumen institucional y, para algunas universidades, un dato curioso con enlace a una fuente verificable.
+El catálogo combina los listados de instituciones con las tablas del Anuario Estadístico Universitario 2022. Las categorías y etiquetas de estudio se basan en disciplinas con matrícula registrada: las fuentes no incluyen un listado de carreras individuales ni confirman la oferta vigente. Todas las fichas incluyen un resumen y un dato de interés con fuente; cuando no se encontró una curiosidad institucional verificable, se muestra una disciplina con matrícula registrada en el Anuario 2022.

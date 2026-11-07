@@ -324,6 +324,234 @@ const fuentesMultiplesPerfiles = {
 };
 
 const datosCuriososInstitucionales = {
+  "672": {
+    fact: "La Escuela Universitaria de Teología nació de una propuesta formulada en las Jornadas Sacerdotales de octubre de 1967.",
+    sources: [{ label: "Origen institucional", url: "https://eut.edu.ar/" }]
+  },
+  "2159": {
+    fact: "FLACSO Argentina comenzó sus actividades en 1974 y se presenta como el primer centro de formación de posgrado en ciencias sociales del país.",
+    sources: [{ label: "Historia de FLACSO Argentina", url: "https://flacso.org.ar/institucional/historia/" }]
+  },
+  "64": {
+    fact: "Equipos estudiantiles del ITBA desarrollan proyectos de cohetería y CanSat, y participan en competencias aeroespaciales.",
+    sources: [{ label: "ITBA al espacio", url: "https://www.itba.edu.ar/landing/itba-al-espacio/" }]
+  },
+  "922": {
+    fact: "La formación universitaria del CEMIC está vinculada a sus hospitales universitarios, que ofrecen atención médica durante las 24 horas.",
+    sources: [{ label: "CEMIC", url: "https://www.cemic.edu.ar/" }]
+  },
+  "2854": {
+    fact: "El IUCBC está junto al Hospital Privado Universitario de Córdoba y cerca de institutos donde se realizan investigaciones biomédicas.",
+    sources: [{ label: "Conocé el IUCBC", url: "https://iucbc.edu.ar/conoce-el-iucbc.html" }]
+  },
+  "3538": {
+    fact: "El Instituto Universitario de la Cooperación lleva el cooperativismo al ámbito de la formación universitaria.",
+    sources: [{ label: "Instituto Universitario de la Cooperación", url: "https://iucoop.edu.ar/" }]
+  },
+  "2355": {
+    fact: "Este instituto universitario está especializado en salud mental y vinculado a la Asociación Psicoanalítica de Buenos Aires.",
+    sources: [{ label: "Instituto Universitario de Salud Mental", url: "https://www.iusam.edu.ar/" }]
+  },
+  "2157": {
+    fact: "El Instituto Universitario de Seguridad Marítima forma profesionales desde 2007 junto a la Prefectura Naval Argentina.",
+    sources: [{ label: "Instituto Universitario de Seguridad Marítima", url: "https://www.iusm.edu.ar/" }]
+  },
+  "924": {
+    fact: "El Instituto Universitario ESEADE recibió autorización provisoria para funcionar mediante el Decreto nacional 238/99.",
+    sources: [{ label: "ESEADE", url: "https://www.eseade.edu.ar/" }]
+  },
+  "3745": {
+    fact: "El Instituto Universitario YMCA tiene más de 30 años de trayectoria en formación vinculada al deporte, la actividad física y la educación.",
+    sources: [{ label: "Instituto Universitario YMCA", url: "https://iuymca.edu.ar/" }]
+  },
+  "102": {
+    fact: "La Universidad Favaloro define la investigación traslacional en salud humana como uno de sus principales objetivos científico-tecnológicos.",
+    sources: [{ label: "Universidad Favaloro", url: "https://www.favaloro.edu.ar/" }]
+  },
+  "740": {
+    fact: "La Universidad Abierta Interamericana informa que obtuvo una acreditación internacional de HCÉRES.",
+    sources: [{ label: "Universidad Abierta Interamericana", url: "https://uai.edu.ar/" }]
+  },
+  "107": {
+    fact: "La Universidad Atlántida Argentina tiene sedes en Mar del Plata, Mar de Ajó, Dolores y la Ciudad de Buenos Aires.",
+    sources: [{ label: "Universidad Atlántida Argentina", url: "https://atlantida.edu.ar/" }]
+  },
+  "99": {
+    fact: "La biblioteca de la Universidad Blas Pascal empezó a formarse en 1980, antes de que la institución iniciara su etapa universitaria.",
+    sources: [{ label: "Historia de la biblioteca", url: "https://www.ubp.edu.ar/biblioteca/historia/" }]
+  },
+  "112": {
+    fact: "La Universidad de Congreso invita a sus estudiantes y graduados a participar en ediciones de la Cátedra de Estudios sobre los Estados Unidos.",
+    sources: [{ label: "Cátedra de Estudios sobre los Estados Unidos", url: "https://www.ucongreso.edu.ar/desafios-para-el-desarrollo-y-la-cooperacion/" }]
+  },
+  "111": {
+    fact: "La Universidad de Flores mantiene un repositorio institucional para consultar y difundir su producción académica.",
+    sources: [{ label: "Universidad de Flores", url: "https://www.uflouniversidad.edu.ar/" }]
+  },
+  "2417": {
+    fact: "La Universidad de San Pablo-T ofrece carreras presenciales y a distancia, además de posgrados y cursos de extensión.",
+    sources: [{ label: "Universidad de San Pablo-T", url: "https://uspt.edu.ar/" }]
+  },
+  "61": {
+    fact: "La Universidad Nacional de La Rioja se constituyó como universidad nacional en 1993, a partir de una institución provincial anterior.",
+    sources: [{ label: "Universidad Nacional de La Rioja", url: "https://www.unlar.edu.ar/" }]
+  },
+  "697": {
+    fact: "El campus de la UNLa ocupa parte del predio de los antiguos Talleres Ferroviarios de Remedios de Escalada.",
+    sources: [{ label: "Universidad Nacional de Lanús", url: "https://www.unla.edu.ar/" }]
+  },
+  "3101": {
+    fact: "La Universidad Nacional de las Artes se creó en 2014 al integrar instituciones nacionales dedicadas a distintas disciplinas artísticas.",
+    sources: [{ label: "Universidad Nacional de las Artes", url: "https://una.edu.ar/" }]
+  },
+  "45": {
+    fact: "La Universidad Nacional de Lomas de Zamora fue creada por la Ley nacional 19.888, sancionada en 1972.",
+    sources: [{ label: "Universidad Nacional de Lomas de Zamora", url: "https://www.unlz.edu.ar/" }]
+  },
+  "3134": {
+    fact: "La Universidad Nacional de los Comechingones fue creada por ley en 2014 y tiene su sede en Villa de Merlo, San Luis.",
+    sources: [{ label: "Universidad Nacional de los Comechingones", url: "https://www.unlc.edu.ar/" }]
+  },
+  "46": {
+    fact: "La Universidad Nacional de Luján fue cerrada durante la última dictadura y reabrió sus puertas en 1984.",
+    sources: [{ label: "Universidad Nacional de Luján", url: "https://www.unlu.edu.ar/" }]
+  },
+  "47": {
+    fact: "La Universidad Nacional de Mar del Plata se formó en 1975 al nacionalizarse una universidad provincial creada en 1961.",
+    sources: [{ label: "Universidad Nacional de Mar del Plata", url: "https://www.mdp.edu.ar/" }]
+  },
+  "48": {
+    fact: "La Universidad Nacional de Misiones fue creada en 1973.",
+    sources: [{ label: "Universidad Nacional de Misiones", url: "https://www.unam.edu.ar/" }]
+  },
+  "2626": {
+    fact: "La Universidad Nacional de Moreno inició sus actividades académicas en 2011 con una propuesta inicial de seis carreras de grado.",
+    sources: [{ label: "Historia de la UNM", url: "https://www.unm.edu.ar/?institucional=historia" }]
+  },
+  "84": {
+    fact: "La Universidad Virtual de Quilmes comenzó a ofrecer educación universitaria a distancia en 1999.",
+    sources: [{ label: "Universidad Nacional de Quilmes", url: "https://www.unq.edu.ar/" }]
+  },
+  "3124": {
+    fact: "La Universidad Nacional de Rafaela fue creada por ley nacional en 2014.",
+    sources: [{ label: "Universidad Nacional de Rafaela", url: "https://www.unraf.edu.ar/" }]
+  },
+  "50": {
+    fact: "El campus de la Universidad Nacional de Río Cuarto incluye un campo experimental vinculado con sus actividades académicas y de investigación.",
+    sources: [{ label: "Universidad Nacional de Río Cuarto", url: "https://www.unrc.edu.ar/" }]
+  },
+  "2459": {
+    fact: "La Universidad Nacional de Río Negro fue creada por ley nacional en 2007.",
+    sources: [{ label: "Universidad Nacional de Río Negro", url: "https://www.unrn.edu.ar/" }]
+  },
+  "52": {
+    fact: "La Universidad Nacional de Salta fue creada en 1972.",
+    sources: [{ label: "Universidad Nacional de Salta", url: "https://www.unsa.edu.ar/" }]
+  },
+  "3123": {
+    fact: "La Universidad Nacional de San Antonio de Areco fue creada por ley nacional en 2015.",
+    sources: [{ label: "Universidad Nacional de San Antonio de Areco", url: "https://www.unsada.edu.ar/" }]
+  },
+  "53": {
+    fact: "La Universidad Nacional de San Juan cuenta con el Observatorio Astronómico Félix Aguilar, dedicado a investigación y formación en astronomía.",
+    sources: [{ label: "Universidad Nacional de San Juan", url: "https://www.unsj.edu.ar/" }]
+  },
+  "54": {
+    fact: "La Universidad Nacional de San Luis se constituyó en 1973, cuando se separó de la Universidad Nacional de Cuyo.",
+    sources: [{ label: "Universidad Nacional de San Luis", url: "https://www.unsl.edu.ar/" }]
+  },
+  "88": {
+    fact: "El campus principal de la Universidad Nacional de San Martín se encuentra en el área de Miguelete, en General San Martín.",
+    sources: [{ label: "Universidad Nacional de San Martín", url: "https://www.unsam.edu.ar/" }]
+  },
+  "55": {
+    fact: "La Universidad Nacional de Santiago del Estero fue creada en 1973.",
+    sources: [{ label: "Universidad Nacional de Santiago del Estero", url: "https://www.unse.edu.ar/" }]
+  },
+  "2633": {
+    fact: "La Universidad Nacional de Tierra del Fuego fue creada en 2009 y tiene sedes en Ushuaia y Río Grande.",
+    sources: [{ label: "Universidad Nacional de Tierra del Fuego", url: "https://www.untdf.edu.ar/" }]
+  },
+  "698": {
+    fact: "La UNTREF gestiona MUNTREF, una red de espacios de arte y museos universitarios que incluye una sede en el antiguo Hotel de Inmigrantes.",
+    sources: [{ label: "Universidad Nacional de Tres de Febrero", url: "https://untref.edu.ar/" }]
+  },
+  "58": {
+    fact: "La Universidad Nacional de Tucumán fue fundada en 1914 por iniciativa de Juan B. Terán.",
+    sources: [{ label: "Universidad Nacional de Tucumán", url: "https://www.unt.edu.ar/" }]
+  },
+  "699": {
+    fact: "La Universidad Nacional de Villa María fue creada por ley nacional en 1995.",
+    sources: [{ label: "Universidad Nacional de Villa María", url: "https://www.unvm.edu.ar/" }]
+  },
+  "2631": {
+    fact: "La Universidad Nacional de Villa Mercedes fue creada por ley nacional en 2009.",
+    sources: [{ label: "Universidad Nacional de Villa Mercedes", url: "https://www.unvime.edu.ar/" }]
+  },
+  "3236": {
+    fact: "La Universidad Nacional del Alto Uruguay fue creada por ley en 2014 y tiene su sede en San Vicente, Misiones.",
+    sources: [{ label: "Universidad Nacional del Alto Uruguay", url: "https://www.unau.edu.ar/" }]
+  },
+  "35": {
+    fact: "La UNICEN surgió en 1974 integrando antecedentes universitarios de Tandil, Olavarría y Azul.",
+    sources: [{ label: "Universidad Nacional del Centro", url: "https://www.unicen.edu.ar/" }]
+  },
+  "2510": {
+    fact: "La Universidad Nacional del Chaco Austral fue creada por ley nacional en 2007.",
+    sources: [{ label: "Universidad Nacional del Chaco Austral", url: "https://www.uncaus.edu.ar/" }]
+  },
+  "36": {
+    fact: "La Universidad Nacional del Comahue fue creada en 1971 con alcance regional en Neuquén y Río Negro.",
+    sources: [{ label: "Universidad Nacional del Comahue", url: "https://www.uncoma.edu.ar/" }]
+  },
+  "49": {
+    fact: "La Universidad Nacional del Nordeste fue creada en 1956 para atender la educación superior de la región nordeste.",
+    sources: [{ label: "Universidad Nacional del Nordeste", url: "https://www.unne.edu.ar/" }]
+  },
+  "2158": {
+    fact: "La UNNOBA fue creada en 2002 y estableció sedes en Junín y Pergamino.",
+    sources: [{ label: "Universidad Nacional del Noroeste", url: "https://www.unnoba.edu.ar/" }]
+  },
+  "2632": {
+    fact: "La Universidad Nacional del Oeste fue creada por ley nacional en 2009 y tiene su sede en Merlo.",
+    sources: [{ label: "Universidad Nacional del Oeste", url: "https://www.uno.edu.ar/" }]
+  },
+  "56": {
+    fact: "La Universidad Nacional del Sur organiza su actividad académica en departamentos, en lugar de la estructura tradicional de facultades.",
+    sources: [{ label: "Institucional", url: "https://www.uns.edu.ar/institucional" }]
+  },
+  "3517": {
+    fact: "La Universidad Nacional Guillermo Brown fue creada por ley nacional en 2015.",
+    sources: [{ label: "Universidad Nacional Guillermo Brown", url: "https://www.unab.edu.ar/" }]
+  },
+  "2634": {
+    fact: "La Universidad Nacional de José C. Paz fue creada por ley nacional en 2009.",
+    sources: [{ label: "Universidad Nacional de José C. Paz", url: "https://www.unpaz.edu.ar/" }]
+  },
+  "3180": {
+    fact: "La Universidad Nacional Raúl Scalabrini Ortiz fue creada por ley nacional en 2015.",
+    sources: [{ label: "Universidad Nacional Raúl Scalabrini Ortiz", url: "https://www.unso.edu.ar/" }]
+  },
+  "83": {
+    fact: "La Universidad Notarial Argentina fue fundada en 1962 por iniciativa del Colegio de Escribanos de la Ciudad de Buenos Aires.",
+    sources: [{ label: "Universidad Notarial Argentina", url: "https://www.universidadnotarial.edu.ar/" }]
+  },
+  "2900": {
+    fact: "La Universidad Pedagógica Nacional comenzó su trayectoria como universidad provincial en 2006 antes de su nacionalización.",
+    sources: [{ label: "Universidad Pedagógica Nacional", url: "https://unipe.edu.ar/" }]
+  },
+  "3022": {
+    fact: "La Universidad Provincial de Córdoba se creó en 2007 a partir de instituciones superiores provinciales.",
+    sources: [{ label: "Universidad Provincial de Córdoba", url: "https://www.upc.edu.ar/" }]
+  },
+  "2899": {
+    fact: "La UPSO fue concebida como una universidad regional con sedes distribuidas en localidades del sudoeste bonaerense.",
+    sources: [{ label: "Universidad Provincial del Sudoeste", url: "https://www.upso.edu.ar/" }]
+  },
+  "100": {
+    fact: "La Universidad Torcuato Di Tella fue fundada en 1991 por la Fundación Torcuato Di Tella, cuya tradición institucional comenzó en 1958.",
+    sources: [{ label: "Universidad Torcuato Di Tella", url: "https://www.utdt.edu/" }]
+  },
   "33": {
     fact: "Tres científicos formados en la UBA recibieron el Premio Nobel: Bernardo Houssay, Luis Federico Leloir y César Milstein.",
     sources: fuentesMultiplesPerfiles["33"]
@@ -346,6 +574,8 @@ const datosCuriososInstitucionales = {
   }
 };
 
+const fuenteAnuarioUniversitario = "https://www.argentina.gob.ar/educacion/universidades/informacion";
+
 window.UNIVERSIDADES.forEach((universidad) => {
   const id = String(universidad.id);
   const resumen = perfilesInstitucionales[id];
@@ -355,14 +585,26 @@ window.UNIVERSIDADES.forEach((universidad) => {
     window.UNIVERSIDADES_METADATA[id] = metadata;
   }
   if (!resumen) return;
+  const disciplinas = universidad.subareas || [];
+  const areas = universidad.areas || [];
+  const datoCurioso = datosCuriososInstitucionales[id] || (disciplinas.length || areas.length || universidad.students2022
+    ? {
+      fact: `En el Anuario Estadístico Universitario 2022 figura matrícula en disciplinas como ${(disciplinas.length ? disciplinas : areas).slice(0, 3).join(", ")}.`,
+      sources: [{ label: "Estadísticas universitarias 2022", url: fuenteAnuarioUniversitario }]
+    }
+    : {
+      fact: resumen,
+      sources: [{
+        label: "Sitio oficial",
+        url: metadata.summarySource || metadata.website || fuentesOficialesPerfiles[id]
+      }]
+    });
   window.UNIVERSIDADES_METADATA[id] = Object.assign({}, metadata, {
     summary: resumen,
     summarySource: fuentesEspecificasPerfiles[id] || metadata.website || fuentesOficialesPerfiles[id],
     ...(fuentesEspecificasPerfiles[id] ? { summarySourceLabel: "Historia institucional" } : {}),
     ...(fuentesMultiplesPerfiles[id] && id !== "33" ? { summarySources: fuentesMultiplesPerfiles[id] } : {}),
-    ...(datosCuriososInstitucionales[id] ? {
-      funFact: datosCuriososInstitucionales[id].fact,
-      funFactSources: datosCuriososInstitucionales[id].sources
-    } : {})
+    funFact: datoCurioso.fact,
+    funFactSources: datoCurioso.sources
   });
 });
