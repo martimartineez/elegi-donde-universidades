@@ -349,8 +349,12 @@ const datosCuriososInstitucionales = {
 window.UNIVERSIDADES.forEach((universidad) => {
   const id = String(universidad.id);
   const resumen = perfilesInstitucionales[id];
-  if (!resumen) return;
   const metadata = window.UNIVERSIDADES_METADATA[id] || {};
+  if (!metadata.website && fuentesOficialesPerfiles[id]) {
+    metadata.website = fuentesOficialesPerfiles[id];
+    window.UNIVERSIDADES_METADATA[id] = metadata;
+  }
+  if (!resumen) return;
   window.UNIVERSIDADES_METADATA[id] = Object.assign({}, metadata, {
     summary: resumen,
     summarySource: fuentesEspecificasPerfiles[id] || metadata.website || fuentesOficialesPerfiles[id],
