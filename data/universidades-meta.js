@@ -344,10 +344,6 @@ const datosCuriososInstitucionales = {
     fact: "El IUCBC está junto al Hospital Privado Universitario de Córdoba y cerca de institutos donde se realizan investigaciones biomédicas.",
     sources: [{ label: "Conocé el IUCBC", url: "https://iucbc.edu.ar/conoce-el-iucbc.html" }]
   },
-  "3538": {
-    fact: "El Instituto Universitario de la Cooperación lleva el cooperativismo al ámbito de la formación universitaria.",
-    sources: [{ label: "Instituto Universitario de la Cooperación", url: "https://iucoop.edu.ar/" }]
-  },
   "2355": {
     fact: "Este instituto universitario está especializado en salud mental y vinculado a la Asociación Psicoanalítica de Buenos Aires.",
     sources: [{ label: "Instituto Universitario de Salud Mental", url: "https://www.iusam.edu.ar/" }]
@@ -496,25 +492,13 @@ const datosCuriososInstitucionales = {
     fact: "La UNICEN surgió en 1974 integrando antecedentes universitarios de Tandil, Olavarría y Azul.",
     sources: [{ label: "Universidad Nacional del Centro", url: "https://www.unicen.edu.ar/" }]
   },
-  "2510": {
-    fact: "La Universidad Nacional del Chaco Austral fue creada por ley nacional en 2007.",
-    sources: [{ label: "Universidad Nacional del Chaco Austral", url: "https://www.uncaus.edu.ar/" }]
-  },
   "36": {
     fact: "La Universidad Nacional del Comahue fue creada en 1971 con alcance regional en Neuquén y Río Negro.",
     sources: [{ label: "Universidad Nacional del Comahue", url: "https://www.uncoma.edu.ar/" }]
   },
-  "49": {
-    fact: "La Universidad Nacional del Nordeste fue creada en 1956 para atender la educación superior de la región nordeste.",
-    sources: [{ label: "Universidad Nacional del Nordeste", url: "https://www.unne.edu.ar/" }]
-  },
   "2158": {
     fact: "La UNNOBA fue creada en 2002 y estableció sedes en Junín y Pergamino.",
     sources: [{ label: "Universidad Nacional del Noroeste", url: "https://www.unnoba.edu.ar/" }]
-  },
-  "2632": {
-    fact: "La Universidad Nacional del Oeste fue creada por ley nacional en 2009 y tiene su sede en Merlo.",
-    sources: [{ label: "Universidad Nacional del Oeste", url: "https://www.uno.edu.ar/" }]
   },
   "56": {
     fact: "La Universidad Nacional del Sur organiza su actividad académica en departamentos, en lugar de la estructura tradicional de facultades.",
@@ -574,7 +558,97 @@ const datosCuriososInstitucionales = {
   }
 };
 
-const fuenteAnuarioUniversitario = "https://www.argentina.gob.ar/educacion/universidades/informacion";
+const datosCuriososInvestigados = {
+  "34": { fact: "La tradición de la UNCA incluye el Instituto Nacional del Profesorado, creado en 1943 a partir de la Escuela Preuniversitaria Fray Mamerto Esquiú.", sources: [{ label: "UNCA — Historia", url: "https://www.unca.edu.ar/historia" }] },
+  "38": { fact: "La UNCUYO inauguró oficialmente sus cursos en 1939 con una conferencia del escritor Ricardo Rojas.", sources: [{ label: "UNCUYO — Reseña histórica", url: "https://www.uncuyo.edu.ar/pagina/resena-historica" }] },
+  "39": { fact: "En un encuentro estudiantil de la UNER se realizó un taller de murga uruguaya y se presentó la murga estudiantil La Vieja Excusa.", sources: [{ label: "UNER — Encuentro de estudiantes", url: "https://www.fcad.uner.edu.ar/destacadas/el-4o-encuentro-de-estudiantes-de-la-uner-reunio-a-la-comunidad-universitaria-en-concordia/" }] },
+  "40": { fact: "En 2025 la UNJu nombró el predio del Rectorado Campus Reforma Universitaria 1918 y colocó allí una placa conmemorativa.", sources: [{ label: "UNJu — Campus", url: "https://www.unju.edu.ar/campus.html" }] },
+  "41": { fact: "El programa La UNLPam en el Territorio creó centros universitarios en cinco localidades pampeanas, entre ellas General Acha, Realicó y Telén.", sources: [{ label: "UNLPam — La UNLPam en el Territorio", url: "https://www.unlpam.edu.ar/programas/la-unlpam-en-el-territorio" }] },
+  "43": { fact: "El edificio oval del Museo de La Plata fue diseñado para representar la espiral evolutiva.", sources: [{ label: "UNLP — Museo de La Plata", url: "https://www.unlp.edu.ar/arte/museosunlp/museo_de_la_plata__ciencias_naturales_-7671-12671/" }] },
+  "45": { fact: "La Facultad de Ciencias Agrarias de la UNLZ inauguró laboratorios que incluyen uno de análisis de semillas para productores agropecuarios.", sources: [{ label: "UNLZ — Laboratorios Alberto Nivio", url: "https://agrarias.unlz.edu.ar/se-inauguraron-los-laboratorios-alberto-nivio/" }] },
+  "46": { fact: "La UNLu conserva un Fondo Documental de la Memoria con documentos sobre la creación, cierre, reapertura y normalización de la institución.", sources: [{ label: "UNLu — Fondo Documental de la Memoria", url: "https://www.biblioteca.unlu.edu.ar/?q=node/68" }] },
+  "47": { fact: "Investigadores de la UNMDP presentaron nuevas variedades de tomate y tecnologías pensadas para la producción regional.", sources: [{ label: "UNMDP — Vinculación con el sector productivo", url: "https://www.mdp.edu.ar/index.php/noticias-de-la-universidad/2206-la-unmdp-fortalece-la-transferencia-de-conocimiento-y-la-vinculacion-con-el-sector-productivo-regional" }] },
+  "48": { fact: "El Museo de la Facultad de Arte y Diseño de la UNaM reabrió en 2022 con la muestra 8M, dedicada a las artes visuales realizadas por mujeres.", sources: [{ label: "UNaM — Museo FAyD", url: "https://www.unam.edu.ar/index.php?view=article&id=680:el-museo-fayd-volvio-a-abrir-sus-puertas&catid=66" }] },
+  "50": { fact: "Investigadores de la UNRC desarrollaron un método con monocapas moleculares para observar efectos de medicamentos en células humanas cultivadas.", sources: [{ label: "UNRC — Método para analizar drogas y tóxicos", url: "https://www.exa.unrc.edu.ar/crean-un-innovador-metodo-para-analizar-los-efectos-de-drogas-y-toxicos-en-humanos/" }] },
+  "52": { fact: "La Universidad Nacional de Salta cuenta con un Museo Histórico dedicado a preservar y exponer el patrimonio tangible e intangible de la comunidad salteña.", sources: [{ label: "Museo Histórico Prof. Eduardo Ashur — UNSa", url: "https://mhistorico.unsa.edu.ar/" }] },
+  "51": { fact: "La Videoteca Rosario, con más de 30.000 títulos, encontró un nuevo espacio en una biblioteca universitaria de la UNR.", sources: [{ label: "UNR — La Videoteca Rosario", url: "https://unr.edu.ar/la-videoteca-rosario-encontro-un-nuevo-hogar-en-la-unr/" }] },
+  "54": { fact: "Dos egresados de la UNSL desarrollaron UniMaps, una aplicación web que traza rutas accesibles por el campus y permite priorizar rampas y ascensores.", sources: [{ label: "UNSL — UniMaps", url: "https://fmn.unsl.edu.ar/2026/10/30/unimaps-una-app-que-te-guia-por-la-unsl/" }] },
+  "57": { fact: "Un equipo de la UTN desarrolló un satélite Pocket Cube de cinco centímetros equipado con sensores de radiación gamma.", sources: [{ label: "UTN — Primer satélite Pocket Cube", url: "https://www.utn.edu.ar/es/articulos-slider-principal/la-utn-lanza-su-primer-satelite-pocket-cube" }] },
+  "58": { fact: "El edificio del Museo de la UNT comenzó a construirse en 1888 como Hotel de Inmigrantes.", sources: [{ label: "UNT — Museo", url: "https://secretariaextension.unt.edu.ar/munt/" }] },
+  "59": { fact: "El IUPFA nació en 1974 como Academia Superior de Estudios Policiales, integrada inicialmente por cuatro institutos.", sources: [{ label: "IUPFA — Historia", url: "https://www.universidad-policial.edu.ar/historia.html" }] },
+  "55": { fact: "La UNSE colaboró en el Museo de Astronomía e Ingeniería de Santiago del Estero con textos en braille y recursos para personas con movilidad reducida.", sources: [{ label: "UNSE — Museo de Astronomía e Ingeniería", url: "https://www.unse.edu.ar/se-inauguro-el-nuevo-museo-de-astronomia-e-ingenieria-maise-con-fuerte-presencia-de-la-unse/" }] },
+  "61": { fact: "El museo de Ciencias Antropológicas y Naturales de la UNLaR exhibe fósiles de dos dinosaurios riojanos: el herbívoro Riojasaurus incertus y el carnívoro Zupaysaurus.", sources: [{ label: "Turismo La Rioja — Museo de la UNLaR", url: "https://turismo.larioja.gob.ar/actividades/museo-de-ciencias-antropologicas-y-naturales-de-la-universidad-nacional-de-la-rioja/" }] },
+  "32": { fact: "La sede de Puerto Madero de la UCA fue bautizada Campus Universitario Papa Francisco.", sources: [{ label: "UCA — Campus Universitario Papa Francisco", url: "https://www.uca.edu.ar/es/noticias/la-uca-bautizo-el-campus-universitario-papa-francisco" }] },
+  "67": { fact: "La UCC cogestiona con el CONICET el IRNASUS, un instituto que investiga producción sustentable en áreas como agronomía, veterinaria y ecología.", sources: [{ label: "UCC — IRNASUS", url: "https://ucc.edu.ar/irnasus/" }] },
+  "69": { fact: "El Museo de Arte Contemporáneo Beato Angélico de la UCALP ocupa un edificio con fachada original de 1902 y seis salas de exposición.", sources: [{ label: "UCALP — Museo Beato Angélico", url: "https://www.ucalp.edu.ar/museo-beato-angelico/" }] },
+  "74": { fact: "La UCU retoma la tradición de La Fraternidad, una asociación educativa nacida en 1877 que conserva un internado histórico.", sources: [{ label: "UCU — Institucional", url: "https://ucu.edu.ar/institucional/" }] },
+  "92": { fact: "En 1898, Jorge Lust donó 17 hectáreas en Entre Ríos para establecer el colegio que antecedió a la Universidad Adventista del Plata.", sources: [{ label: "UAP — Hitos de su historia", url: "https://biblioteca.uap.edu.ar/2017/11/algunos-hitos-en-la-historia-de-la-uap/" }] },
+  "110": { fact: "La UCEMA reúne 11 centros de investigación y extensión que elaboran índices, bases de datos y publicaciones.", sources: [{ label: "UCEMA — Institucional", url: "https://ucema.edu.ar/institucional" }] },
+  "3148": { fact: "La Universidad Provincial de Ezeiza tiene un observatorio de transporte aéreo y turismo que busca generar indicadores para el sector.", sources: [{ label: "UPE — Observatorio de Transporte Aéreo y Turismo", url: "https://upe.edu.ar/observatorio-de-transporte-aereo-y-turismo/" }] },
+  "3981": { fact: "La Universidad del Gran Rosario creó en 2017 un centro para articular sus unidades de investigación con la docencia y la práctica asistencial.", sources: [{ label: "UGR — Centro de Estudio e Investigación", url: "https://ugr.edu.ar/institucional/centro-estudio-investigacion-ugr/" }] },
+  "85": { fact: "En sus Jornadas de Ciencia y Tecnología, la UNaF presentó un proyecto interdisciplinario de psiconutrición para estudiantes.", sources: [{ label: "UNaF — Jornadas de Ciencia y Tecnología", url: "https://www.unf.edu.ar/hoy-finalizan-las-xxix-jornadas-de-ciencia-y-tecnologia-de-la-unaf/" }] },
+  "105": { fact: "La Universidad del Cine cuenta con un laboratorio fotoquímico y otro dedicado a la posproducción de imagen.", sources: [{ label: "Universidad del Cine — Autoridades", url: "https://ucine.edu.ar/institucional/autoridades" }] },
+  "65": { fact: "UADE Art abrió en 2010 y dos años después la revista Ñ lo incluyó entre los 100 Museos Imperdibles de la Argentina.", sources: [{ label: "UADE Art — Acerca de UADE Art", url: "https://www.concursoartesvisuales.uade.edu.ar/acerca-de-uade-art/" }] },
+  "75": { fact: "Al comenzar sus actividades en 1960, la Facultad de Derecho de la Universidad de Mendoza se convirtió en la primera de la provincia.", sources: [{ label: "Universidad de Mendoza — 63.º aniversario", url: "https://www.um.edu.ar/noticias/63o-aniversario-de-la-universidad-de-mendoza/" }] },
+  "76": { fact: "El rectorado de la Universidad de Morón funciona en la antigua casa del ingeniero Ernesto C. Boatti, que fue la primera sede propia de la institución.", sources: [{ label: "La Siglo de Morón — Historia de la Universidad de Morón", url: "https://lasiglo.com.ar/2025/05/27/cumplio-sus-65-anos-la-universidad-de-moron/" }] },
+  "77": { fact: "El archivo de la Universidad del Aconcagua conserva actas desde su Acta N.º 1, gracias al cuidado de Cacho Cerutti, uno de sus miembros fundadores.", sources: [{ label: "Universidad del Aconcagua — 61 años de historia", url: "https://www.uda.edu.ar/index.php/categoria-uda/1988-celebramos-61-anos-de-historia" }] },
+  "78": { fact: "En 1924, el Museo Social Argentino organizó un Congreso Internacional de Economía Social con instituciones participantes de 32 países.", sources: [{ label: "UMSA — Historia", url: "https://www.umsa.edu.ar/acerca-de-umsa/historia/" }] },
+  "79": { fact: "La Editorial UNSTA publicó investigaciones de un congreso internacional de historia dominicana y un encuentro de archivistas realizados en 2025.", sources: [{ label: "UNSTA — Conventos, cultura escrita y compromiso social", url: "https://www.unsta.edu.ar/conventos-cultura-escrita-y-compromiso-social-estudios-historicos-sobre-la-orden-de-predicadores-en-america/" }] },
+  "81": { fact: "La UdeMM impulsa un banco automatizado para ensayar vigas y comparar cálculos teóricos con mediciones reales.", sources: [{ label: "UdeMM — Proyecto de I+D en ingeniería", url: "https://www.udemm.edu.ar/la-universidad-impulsa-un-proyecto-de-id-para-fortalecer-la-ensenanza-y-la-investigacion-en-ingenieria/" }] },
+  "82": { fact: "En 2026, el laboratorio de inteligencia artificial de la Universidad Juan Agustín Maza fue finalista de los Premios Polo TIC Mendoza con ATENIA + IATONES Docentes.", sources: [{ label: "UMaza — Premios Polo TIC Mendoza 2026", url: "https://www.umaza.edu.ar/premios-polo-tic-mendoza-2026-finalista-umaza" }] },
+  "84": { fact: "Un estudio de la UNQ modela el Paraná y evalúa 32 tomas de agua potable para anticipar problemas ante bajantes o crecidas.", sources: [{ label: "UNQ — Gestión del agua y cambio climático", url: "https://www.unq.edu.ar/noticias/la-unq-desarrolla-estudios-para-mejorar-la-gestion-del-agua-frente-al-cambio-climatico/" }] },
+  "86": { fact: "El campus de la UNLaM ocupa el predio de una antigua fábrica de Chrysler-Fevre Argentina, donde se producían autos y camiones.", sources: [{ label: "UNLaM — Historia", url: "https://www.unlam.edu.ar/institucional/historia/" }] },
+  "87": { fact: "La UNGS sostiene el Observatorio del Conurbano Bonaerense, dedicado a reunir e intercambiar información social, política, urbana y ambiental de la región.", sources: [{ label: "UNGS — Observatorio del Conurbano Bonaerense", url: "https://www.ungs.edu.ar/ico/observatorio-del-conurbano-bonaerense" }] },
+  "89": { fact: "La residencia estudiantil de la UNPA en Cañadón Seco funciona en el antiguo hotel de YPF.", sources: [{ label: "UNPA — Unidad Académica Caleta Olivia", url: "https://www.uaco.unpa.edu.ar/" }] },
+  "96": { fact: "En 1996, la Biblioteca de la Universidad de Palermo fue pionera en Argentina en usar bases de datos de revistas internacionales en CD-ROM.", sources: [{ label: "Universidad de Palermo — Historia de la Biblioteca", url: "https://www.palermo.edu/biblioteca/Resena_Historica.html" }] },
+  "97": { fact: "El antecedente histórico de la Universidad de San Andrés fue una escuela fundada en 1838 por colonos escoceses.", sources: [{ label: "Universidad de San Andrés — Historia", url: "https://www.udesa.edu.ar/nuestra-historia" }] },
+  "98": { fact: "El Centro de Ciencias Naturales, Ambientales y Antropológicas de la Universidad Maimónides conserva colecciones biológicas, fósiles y arqueológicas, y tiene un laboratorio 3D.", sources: [{ label: "CCNAA — Patrimonio natural y cultural", url: "https://ccnaa.maimonides.edu/departamentos/patrimonio-natural-y-cultural/" }] },
+  "101": { fact: "La celebración del 30.º aniversario de la Universidad FASTA coincidió con los 60 años del movimiento FASTA que la fundó.", sources: [{ label: "AICA — Aniversario de la Universidad FASTA", url: "https://aica.org/noticia-la-universidad-fasta-celebro-su-30-aniversario" }] },
+  "103": { fact: "La historia de la Fundación Barceló comenzó en 1968 con una propuesta universitaria de formación en salud con mirada federal.", sources: [{ label: "Fundación Barceló — La Universidad", url: "https://barcelo.edu.ar/la-universidad" }] },
+  "108": { fact: "El Instituto de Investigaciones Científicas de la UCP, dependiente del Rectorado, fue creado en 1999.", sources: [{ label: "UCP — Historia del IDIC", url: "https://www.ucp.edu.ar/idic-anterior/historia-idic/" }] },
+  "113": { fact: "El Campus Juan Carlos Rabbat de la Universidad Siglo 21 se inauguró en 2004 bajo un plan maestro diseñado por el arquitecto César Pelli.", sources: [{ label: "Universidad Siglo 21 — Campus Córdoba", url: "https://21.edu.ar/la-universidad/sedes-centros/campus-cordoba" }] },
+  "698": { fact: "El ensamble de berimbaos de la orquesta de la UNTREF tocó en un glaciar francés a 3.200 metros de altura.", sources: [{ label: "UNTREF — IDECREA", url: "https://idecrea.untref.edu.ar/es/videos" }] },
+  "699": { fact: "Tres proyectos de la UNVM fueron seleccionados entre 487 propuestas provinciales, incluidos una hamburguesa plant-based y un dispositivo multisensorial.", sources: [{ label: "UNVM — Córdoba Ciencia Productiva", url: "https://investigacion.unvm.edu.ar/noticias/sin-categoria/cordoba-ciencia-productiva-fueron-seleccionados-17-proyectos-de-la-unvm" }] },
+  "922": { fact: "En 2002, el Instituto Universitario CEMIC creó una unidad académica dedicada a la investigación científica.", sources: [{ label: "CEMIC — Instituto Universitario", url: "https://cemic.edu.ar/instituto-universitario.php" }] },
+  "923": { fact: "La Universidad Gastón Dachary tuvo su origen en el IPESMI, creado en 1990 como la primera institución privada laica de educación superior de Misiones.", sources: [{ label: "Universidad Gastón Dachary — Historia", url: "https://ugd.edu.ar/es/la-universidad/la-ugd/carta-de-bienvenida/106-la-universidad/188-historia" }] },
+  "924": { fact: "ESEADE comenzó sus actividades con el primer programa de MBA ofrecido en Argentina, según su reseña institucional.", sources: [{ label: "ESEADE — Historia", url: "https://www.eseade.edu.ar/historia/" }] },
+  "925": { fact: "ISALUD inició sus actividades en 1991 en un pequeño departamento de la avenida Corrientes.", sources: [{ label: "ISALUD — Historia", url: "https://www.isalud.edu.ar/institucional/historia" }] },
+  "2113": { fact: "La fundación que sostiene al IUNIR se constituyó en 1997 para crearlo; el instituto comenzó sus actividades en 2001.", sources: [{ label: "IUNIR — Fundación", url: "https://www.iunir.edu.ar/institucional/fundacion" }] },
+  "2114": { fact: "El Hospital Italiano de Buenos Aires fundó su propio instituto universitario en 2000.", sources: [{ label: "Universidad Hospital Italiano — Institucional", url: "https://univ.hospitalitaliano.edu.ar/" }] },
+  "2157": { fact: "El Instituto Universitario de Seguridad Marítima se creó en 2007 mediante la Ley 26.286.", sources: [{ label: "Argentina.gob.ar — IUSM", url: "https://www.argentina.gob.ar/noticias/el-instituto-universitario-de-seguridad-maritima-cumple-16-anos" }] },
+  "2159": { fact: "La biblioteca de FLACSO Argentina lleva el nombre del sociólogo Enzo Faletto y su repositorio FLACSOAndes reúne tesis de posgrado.", sources: [{ label: "FLACSO Argentina — Biblioteca", url: "https://flacso.org.ar/biblioteca/" }] },
+  "2160": { fact: "La UNdeC surgió de una pequeña sede frente a la Plaza Caudillos Federales y de la iniciativa de la comunidad local.", sources: [{ label: "UNdeC — Aniversario", url: "https://www.undec.edu.ar/aniversario-acto-celebracion-por-los-23-anos-de-la-undec/" }] },
+  "2302": { fact: "En 2023, el Instituto Universitario Escuela Argentina de Negocios obtuvo reconocimiento definitivo para funcionar como institución universitaria privada.", sources: [{ label: "Boletín Oficial — Decreto 598/2023", url: "https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/393414/norma.htm" }] },
+  "2355": { fact: "Según el libro institucional sobre su creación, IUSAM fue la primera universidad creada por una asociación psicoanalítica afiliada a la IPA para alojar al psicoanálisis.", sources: [{ label: "Librería Siglo — El IUSAM de APdeBA", url: "https://libreriasiglo.com/115616-el-iusam-de-apdeba" }] },
+  "2417": { fact: "En 2016, la Universidad de San Pablo-T anunció el proyecto de la Reserva San Pablo, presentada como la primera área protegida gestionada por una universidad privada en Argentina.", sources: [{ label: "La Gaceta — Reserva San Pablo", url: "https://www.lagaceta.com.ar/nota/682239/economia/abriran-reserva-900-hectareas-villa-nougues.html" }] },
+  "2459": { fact: "Egresadas de la UNRN crearon la videoinstalación inmersiva Tierra, presentada a estudiantes de Diseño Artístico Audiovisual en el Laberinto Patagonia.", sources: [{ label: "UNRN — Experiencia inmersiva", url: "https://www.unrn.edu.ar/noticias/Una-experiencia-inmersiva-para-estudiantes-de-Audiovisual-3109" }] },
+  "2624": { fact: "La sede central de la UNAJ ocupa antiguos laboratorios de YPF; allí se recuperó una fuente que llevaba más de 25 años sin funcionar.", sources: [{ label: "UNAJ — Recuperación de la fuente histórica", url: "https://www.unaj.edu.ar/la-unaj-recupera-la-historica-fuente-de-su-sede-central/" }] },
+  "2625": { fact: "La sede Piñeyro de la UNDAV funciona en un antiguo lavadero de lanas de la empresa Alonso, que cerró en 1989.", sources: [{ label: "UNDAV — Origen de la sede Piñeyro", url: "https://coninformacion.undav.edu.ar/1975.html" }] },
+  "2626": { fact: "La UNM presentó un anteproyecto para restaurar el edificio que alojó al Museo Florencio Molina Campos y convertirlo también en un centro cultural universitario.", sources: [{ label: "UNM — Proyecto de restauración", url: "https://www.unm.edu.ar/la-unm-mantuvo-una-reunion-con-la-comision-de-patrimonio-de-moreno-y-la-fundacion-florencio-molina-campos/" }] },
+  "2631": { fact: "Un proyecto de Kinesiología de la UNViMe fue seleccionado entre los cuatro mejores de Latinoamérica para presentarse en un congreso internacional.", sources: [{ label: "UNViMe — Proyecto de investigación en Kinesiología", url: "https://archivo-web.unvime.edu.ar/seleccionan-proyecto-de-investigacion-en-kinesiologia-para-ser-presentado-en-congreso-internacional/" }] },
+  "2633": { fact: "El Centro de Documentación Anne Chapman de la UNTDF conserva un archivo relacionado con los pueblos selk'nam y yagán.", sources: [{ label: "UNTDF — Centros de documentación", url: "https://www.untdf.edu.ar/investigacion-y-gestion-del-conocimiento/centros-de-documentacion/" }] },
+  "2634": { fact: "La UNPAZ impulsa un proyecto de telefonía universitaria por Internet para realizar llamadas sin costo.", sources: [{ label: "UNPAZ — Telefonía universitaria", url: "https://idepi.unpaz.edu.ar/node/54" }] },
+  "2851": { fact: "La Universidad de San Isidro tiene una Cátedra Libre Diego Armando Maradona dedicada a estudiar la cultura popular y su potencial transformador.", sources: [{ label: "USI — Cátedra Libre Diego Armando Maradona", url: "https://usi.edu.ar/extension-universitaria/catedra-libre-diego-armando-maradona/" }] },
+  "2853": { fact: "La UMET fue presentada como la primera universidad argentina impulsada y cogestionada por organizaciones sindicales y de la sociedad civil.", sources: [{ label: "UMET — Acerca de UMET", url: "https://umet.edu.ar/acerca-de-umet/" }] },
+  "2997": { fact: "Un proyecto coordinado por la UNAHUR investiga la propagación in vitro de Cannabis sativa y posibles usos antimicrobianos de sus derivados.", sources: [{ label: "UNAHUR — Proyecto de investigación", url: "https://unahur.edu.ar/un-proyecto-de-investigacion-coordinado-por-la-unahur-recibe-financiamiento-de-la-provincia/" }] },
+  "3074": { fact: "La Facultad del Ejército tiene raíces en una dirección creada en 1986 para coordinar el Colegio Militar, la Escuela Superior de Guerra y la Escuela Superior Técnica.", sources: [{ label: "UNDEF — Facultad del Ejército", url: "https://undef.edu.ar/facultad-del-ejercito/" }] },
+  "3098": { fact: "La Universidad Nacional Madres de Plaza de Mayo se creó por ley en 2023 sobre la base del instituto universitario de derechos humanos que la precedió.", sources: [{ label: "Argentina.gob.ar — Ley 27.731", url: "https://www.argentina.gob.ar/normativa/nacional/ley-27731-391374/texto" }] },
+  "3101": { fact: "Al constituirse como IUNA a fines de 1996, reunió siete instituciones nacionales de arte, entre ellas el Conservatorio Carlos López Buchardo y la escuela Prilidiano Pueyrredón.", sources: [{ label: "UNA — Historia institucional", url: "https://una.edu.ar/contenidos/historia_12263" }] },
+  "3123": { fact: "El rectorado de la UNSAdA ocupa un edificio histórico llamado La yegua baya, que recibió un premio nacional de recuperación patrimonial en 2024.", sources: [{ label: "UNSAdA — Premio de recuperación patrimonial", url: "https://www.unsada.edu.ar/1018-el-rectorado-de-la-unsada-fue-premiado-en-un-certamen-de-arquitectura" }] },
+  "3124": { fact: "Investigadores de la UNRaf estudian enzimas para transformar productos y subproductos de la industria láctea.", sources: [{ label: "UNRaf — Investigación en tecnología láctea", url: "https://www.unraf.edu.ar/noticias/noti3624" }] },
+  "3134": { fact: "Autoridades de la UNLC se reunieron con la directora del Centro para la Biodiversidad y Conservación del American Museum of Natural History para evaluar cooperación.", sources: [{ label: "UNLC — Cooperación con el Museo de Historia Natural", url: "https://unlc.edu.ar/la-unlc-inicia-cooperacion-con-el-museo-americano-de-historia-natural-de-ee-uu/" }] },
+  "3153": { fact: "El IUPA obtuvo reconocimiento nacional definitivo en 2015, lo que le permitió emitir títulos de validez nacional.", sources: [{ label: "IUPA — Reconocimiento definitivo", url: "https://iupa.edu.ar/iupa-universidad-con-la-firma-presidencial/" }] },
+  "3180": { fact: "La UNSO cuenta con un centro de estudios dedicado a la prospectiva, los escenarios y la competitividad.", sources: [{ label: "UNSO — CEAPEC", url: "https://www.unso.edu.ar/ceapec/" }] },
+  "3236": { fact: "La UNAU realizó un intercambio de instrumentación quirúrgica con actividades de simulación entre pares.", sources: [{ label: "UNAU — Intercambio interuniversitario", url: "https://unau.edu.ar/novedades/unau-impulsa-intercambio-interuniversitario-2026" }] },
+  "3517": { fact: "Graduados de la UNaB presentaron videojuegos propios y hologramas en una feria del libro local.", sources: [{ label: "UNaB — Ciencia, tecnología e innovación", url: "https://www.unab.edu.ar/la-unab-ciencia-tecnologia-innovacion-filab/" }] },
+};
+
+Object.assign(datosCuriososInstitucionales, datosCuriososInvestigados);
+[
+  "88", "102", "107", "111", "112", "2157", "2355", "2634",
+  "2854", "2900", "3022", "3745", "36", "35", "83", "100",
+  "672", "2899"
+].forEach((id) => delete datosCuriososInstitucionales[id]);
 
 window.UNIVERSIDADES.forEach((universidad) => {
   const id = String(universidad.id);
@@ -585,26 +659,15 @@ window.UNIVERSIDADES.forEach((universidad) => {
     window.UNIVERSIDADES_METADATA[id] = metadata;
   }
   if (!resumen) return;
-  const disciplinas = universidad.subareas || [];
-  const areas = universidad.areas || [];
-  const datoCurioso = datosCuriososInstitucionales[id] || (disciplinas.length || areas.length || universidad.students2022
-    ? {
-      fact: `En el Anuario Estadístico Universitario 2022 figura matrícula en disciplinas como ${(disciplinas.length ? disciplinas : areas).slice(0, 3).join(", ")}.`,
-      sources: [{ label: "Estadísticas universitarias 2022", url: fuenteAnuarioUniversitario }]
-    }
-    : {
-      fact: resumen,
-      sources: [{
-        label: "Sitio oficial",
-        url: metadata.summarySource || metadata.website || fuentesOficialesPerfiles[id]
-      }]
-    });
+  const datoCurioso = datosCuriososInstitucionales[id];
   window.UNIVERSIDADES_METADATA[id] = Object.assign({}, metadata, {
     summary: resumen,
     summarySource: fuentesEspecificasPerfiles[id] || metadata.website || fuentesOficialesPerfiles[id],
     ...(fuentesEspecificasPerfiles[id] ? { summarySourceLabel: "Historia institucional" } : {}),
     ...(fuentesMultiplesPerfiles[id] && id !== "33" ? { summarySources: fuentesMultiplesPerfiles[id] } : {}),
-    funFact: datoCurioso.fact,
-    funFactSources: datoCurioso.sources
+    ...(datoCurioso ? {
+      funFact: datoCurioso.fact,
+      funFactSources: datoCurioso.sources
+    } : {})
   });
 });
